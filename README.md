@@ -1,6 +1,10 @@
 # 🇹🇳 جميع القوانين التونسية (All Tunisian Laws)
 
+[![Vercel Deployment](https://vercel.com/button)](https://all-laws-tunisia.vercel.app)
+
 منصة شاملة لجميع القوانين والتشريعات التونسية في مكان واحد
+
+> 🚀 **Automatic Deployment**: This project is connected to Vercel for automatic deployments from GitHub!
 
 ## 📋 وصف المشروع
 
