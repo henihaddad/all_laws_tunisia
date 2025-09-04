@@ -5,6 +5,8 @@
 منصة شاملة لجميع القوانين والتشريعات التونسية في مكان واحد
 
 > 🚀 **Automatic Deployment**: This project is connected to Vercel for automatic deployments from GitHub!
+>
+> **✅ Connection Fixed**: Now properly connected to https://github.com/henihaddad/all_laws_tunisia
 
 ## 📋 وصف المشروع
 
