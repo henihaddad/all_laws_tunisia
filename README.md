@@ -1,6 +1,6 @@
 # 🇹🇳 جميع القوانين التونسية (All Tunisian Laws)
 
-[![Vercel Deployment](https://vercel.com/button)](https://all-laws-tunisia.vercel.app)
+[![Vercel Deployment](https://vercel.com/button)](https://alllawstunisia-a7k1ar8q0-henihaddads-projects.vercel.app)
 
 منصة شاملة لجميع القوانين والتشريعات التونسية في مكان واحد
 
@@ -134,7 +134,7 @@ npm run vercel-deploy
 ## 🌐 النشر والوصول
 
 ### رابط الموقع المباشر
-**Vercel Deployment:** https://all-laws-tunisia-5q7yc2zya-henihaddads-projects.vercel.app
+**Vercel Deployment:** https://alllawstunisia-a7k1ar8q0-henihaddads-projects.vercel.app
 
 ### رابط المستودع
 **GitHub Repository:** https://github.com/henihaddad/all_laws_tunisia
