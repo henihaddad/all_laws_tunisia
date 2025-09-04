@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://alllawstunisia-9v2gj0s5u-henihaddads-projects.vercel.app",
+  "homepage": "https://alllawstunisia.vercel.app",
   "repository": {
     "type": "git",
     "url": "https://github.com/henihaddad/all_laws_tunisia.git"
@@ -12,8 +12,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "vercel-deploy": "vercel --prod"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",

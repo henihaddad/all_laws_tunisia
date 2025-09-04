@@ -46,32 +46,32 @@ const LandingPage = () => {
         <div className="container">
           <h2 className="section-title">Fonctionnalités Principales</h2>
           <div className="features-grid">
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 0}}>
               <div className="feature-icon">🔍</div>
               <h3>Recherche Avancée</h3>
               <p>Recherchez dans les lois facilement grâce à un moteur de recherche intelligent qui vous aide à trouver ce que vous cherchez</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 1}}>
               <div className="feature-icon">📖</div>
               <h3>Lecture Facile</h3>
               <p>Parcourez les lois dans un format clair et organisé qui facilite la lecture et la compréhension</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 2}}>
               <div className="feature-icon">⚡</div>
               <h3>Vitesse Élevée</h3>
               <p>Accès rapide aux informations sans avoir besoin de rechercher dans plusieurs sources</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 3}}>
               <div className="feature-icon">🔄</div>
               <h3>Mise à Jour Continue</h3>
               <p>Nous vous tenons constamment informé des modifications et des nouvelles lois</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 4}}>
               <div className="feature-icon">📱</div>
               <h3>Réactif</h3>
               <p>Utilisez le site sur tous les appareils et plateformes facilement</p>
             </div>
-            <div className="feature-card">
+            <div className="feature-card" style={{"--card-index": 5}}>
               <div className="feature-icon">🆓</div>
               <h3>Gratuit</h3>
               <p>Accès gratuit complet à toutes les lois et législations</p>
@@ -166,28 +166,49 @@ const LandingPage = () => {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <h3>جميع القوانين التونسية</h3>
-              <p>منصة شاملة للتشريعات التونسية</p>
+              <h3>Toutes les Lois Tunisiennes</h3>
+              <p>Plateforme complète pour les législations tunisiennes</p>
+              <div className="footer-badges">
+                <span className="badge">🇹🇳 Officiel</span>
+                <span className="badge">🔒 Sécurisé</span>
+                <span className="badge">⚡ Rapide</span>
+              </div>
             </div>
             <div className="footer-section">
-              <h4>روابط سريعة</h4>
+              <h4>Liens Rapides</h4>
               <ul>
-                <li><a href="#features">المميزات</a></li>
-                <li><a href="#about">حول الموقع</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Politique de Confidentialité</a></li>
               </ul>
             </div>
             <div className="footer-section">
-              <h4>تابعنا</h4>
+              <h4>Suivez-nous</h4>
               <div className="social-links">
-                <a href="#" className="social-link">📘</a>
-                <a href="#" className="social-link">🐦</a>
-                <a href="#" className="social-link">📷</a>
+                <a href="#" className="social-link" aria-label="Facebook">📘</a>
+                <a href="#" className="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" className="social-link" aria-label="LinkedIn">💼</a>
+                <a href="#" className="social-link" aria-label="Instagram">📷</a>
+              </div>
+              <div className="newsletter">
+                <h5>Restez Informé</h5>
+                <div className="newsletter-input">
+                  <input type="email" placeholder="Votre email" />
+                  <button className="btn-newsletter">S'abonner</button>
+                </div>
               </div>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 جميع القوانين التونسية. جميع الحقوق محفوظة.</p>
+            <div className="footer-legal">
+              <p>&copy; 2024 Toutes les Lois Tunisiennes. Tous droits réservés.</p>
+              <div className="footer-links">
+                <a href="#">Mentions Légales</a>
+                <a href="#">CGU</a>
+                <a href="#">Support</a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
