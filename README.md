@@ -1,6 +1,6 @@
 # 🇹🇳 جميع القوانين التونسية (All Tunisian Laws)
 
-[![Vercel Deployment](https://vercel.com/button)](https://alllawstunisia-9v2gj0s5u-henihaddads-projects.vercel.app)
+[![Vercel Deployment](https://vercel.com/button)](https://alllawstunisia-g7iwz1brq-henihaddads-projects.vercel.app)
 
 منصة شاملة لجميع القوانين والتشريعات التونسية في مكان واحد
 
@@ -10,7 +10,9 @@
 >
 > **🔄 Testing Deployment**: This commit should trigger automatic deployment from GitHub to Vercel
 >
-> **🆕 New Vercel Project**: Fresh project created at https://alllawstunisia-a7k1ar8q0-henihaddads-projects.vercel.app
+> **🆕 New Vercel Project**: Fresh project created at https://alllawstunisia-g7iwz1brq-henihaddads-projects.vercel.app
+>
+> **✅ Repository Made Public**: Authentication protection removed for demo purposes
 
 ## 📋 وصف المشروع
 
@@ -134,7 +136,7 @@ npm run vercel-deploy
 ## 🌐 النشر والوصول
 
 ### رابط الموقع المباشر
-**Vercel Deployment:** https://alllawstunisia-9v2gj0s5u-henihaddads-projects.vercel.app
+**Vercel Deployment:** https://alllawstunisia-g7iwz1brq-henihaddads-projects.vercel.app
 
 ### رابط المستودع
 **GitHub Repository:** https://github.com/henihaddad/all_laws_tunisia
