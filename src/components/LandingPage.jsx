@@ -20,6 +20,9 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <section className="hero">
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
         <div className="hero-content">
           <h1 className="hero-title">
             Plateforme Complète pour Toutes les Lois Tunisiennes
@@ -212,6 +215,25 @@ const LandingPage = () => {
           </div>
         </div>
       </footer>
+
+      {/* Scroll Indicator */}
+      <div className="scroll-indicator" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}></div>
+
+      {/* Particle Effects Container */}
+      <div className="particles-container">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 10}s`,
+              animationDuration: `${8 + Math.random() * 4}s`
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 };
