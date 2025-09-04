@@ -32,7 +32,7 @@
 
 1. **استنساخ المشروع**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YOUR_USERNAME/all_laws_tunisia.git
    cd all_laws_tunisia
    ```
 
@@ -120,6 +120,14 @@ npm run lint
 # نشر على Vercel
 npm run vercel-deploy
 ```
+
+## 🌐 النشر والوصول
+
+### رابط الموقع المباشر
+**Vercel Deployment:** https://all-laws-tunisia-5q7yc2zya-henihaddads-projects.vercel.app
+
+### رابط المستودع
+**GitHub Repository:** https://github.com/YOUR_USERNAME/all_laws_tunisia
 
 ## 🎯 المميزات المستقبلية
 

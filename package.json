@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://all-laws-tunisia-5q7yc2zya-henihaddads-projects.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/all_laws_tunisia.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
