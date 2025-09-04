@@ -1,9 +1,43 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import './LandingPage.css';
 
 const LandingPage = () => {
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved) return saved === 'dark';
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
+
+  const particles = useMemo(() => (
+    Array.from({ length: 20 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 10}s`,
+      animationDuration: `${8 + Math.random() * 4}s`,
+    }))
+  ), []);
+
+  const onSearchSubmit = (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const q = new FormData(form).get('q');
+    if (q && typeof q === 'string') {
+      // For now, reflect the query in the hash and scroll to features
+      const url = new URL(window.location.href);
+      url.hash = `search=${encodeURIComponent(q)}`;
+      window.history.replaceState({}, '', url.toString());
+    }
+    const el = document.getElementById('features');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="landing-page">
+    <div className={`landing-page${isDark ? ' dark' : ''}`}>
+      <a href="#main" className="skip-link">Aller au contenu principal</a>
       {/* Header */}
       <header className="header">
         <nav className="nav">
@@ -14,12 +48,20 @@ const LandingPage = () => {
             <a href="#features">Fonctionnalités</a>
             <a href="#about">À propos</a>
             <a href="#contact">Contact</a>
+            <button
+              type="button"
+              className="theme-toggle"
+              aria-label={isDark ? 'Activer le mode clair' : 'Activer le mode sombre'}
+              onClick={() => setIsDark((v) => !v)}
+            >
+              {isDark ? '☀️' : '🌙'}
+            </button>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" id="main" aria-label="En-tête de la page">
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
@@ -31,6 +73,16 @@ const LandingPage = () => {
             Découvrez et consultez toutes les législations et lois tunisiennes en un seul endroit.
             Facilité de recherche et d'accès aux informations juridiques fiables.
           </p>
+          <form className="hero-search" role="search" onSubmit={onSearchSubmit} aria-label="Recherche dans les lois">
+            <input
+              type="search"
+              name="q"
+              placeholder="Rechercher une loi, un décret, un mot-clé…"
+              aria-label="Votre requête de recherche"
+              autoComplete="off"
+            />
+            <button className="btn btn-primary" type="submit">Rechercher</button>
+          </form>
           <div className="hero-buttons">
             <button className="btn btn-primary">Commencer la Recherche</button>
             <button className="btn btn-secondary">Explorer les Lois</button>
@@ -220,20 +272,18 @@ const LandingPage = () => {
       <div className="scroll-indicator" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}></div>
 
       {/* Particle Effects Container */}
-      <div className="particles-container">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="particle"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 10}s`,
-              animationDuration: `${8 + Math.random() * 4}s`
-            }}
-          />
+      <div className="particles-container" aria-hidden="true">
+        {particles.map((p, i) => (
+          <div key={i} className="particle" style={p} />
         ))}
       </div>
+
+      <button
+        type="button"
+        className="back-to-top"
+        aria-label="Revenir en haut de la page"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >↑</button>
     </div>
   );
 };
