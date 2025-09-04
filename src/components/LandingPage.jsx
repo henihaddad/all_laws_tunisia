@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -7,10 +7,27 @@ const LandingPage = () => {
     if (saved) return saved === 'dark';
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
+  const [paletteOpen, setPaletteOpen] = useState(false);
+  const [paletteQuery, setPaletteQuery] = useState('');
+  const paletteInputRef = useRef(null);
 
   useEffect(() => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }, [isDark]);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      const isMac = navigator.platform.toUpperCase().includes('MAC');
+      if ((isMac && e.metaKey && e.key.toLowerCase() === 'k') || (!isMac && e.ctrlKey && e.key.toLowerCase() === 'k')) {
+        e.preventDefault();
+        setPaletteOpen((v) => !v);
+        setTimeout(() => paletteInputRef.current?.focus(), 0);
+      }
+      if (e.key === 'Escape') setPaletteOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   const particles = useMemo(() => (
     Array.from({ length: 20 }).map(() => ({
@@ -35,6 +52,15 @@ const LandingPage = () => {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const suggestions = [
+    'Code des obligations et des contrats',
+    'Droit des sociétés',
+    'Procédure civile et commerciale',
+    'Droit du travail',
+    'Marchés publics',
+    'Protection des données (RGPD/Tunisie)'
+  ];
+
   return (
     <div className={`landing-page${isDark ? ' dark' : ''}`}>
       <a href="#main" className="skip-link">Aller au contenu principal</a>
@@ -48,6 +74,7 @@ const LandingPage = () => {
             <a href="#features">Fonctionnalités</a>
             <a href="#about">À propos</a>
             <a href="#contact">Contact</a>
+            <span className="kbd-hint" aria-hidden="true">⌘K</span>
             <button
               type="button"
               className="theme-toggle"
@@ -65,6 +92,7 @@ const LandingPage = () => {
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
+        <div className="gradient-mesh" aria-hidden="true"></div>
         <div className="hero-content">
           <h1 className="hero-title">
             Plateforme Complète pour Toutes les Lois Tunisiennes
@@ -84,14 +112,33 @@ const LandingPage = () => {
             <button className="btn btn-primary" type="submit">Rechercher</button>
           </form>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Commencer la Recherche</button>
+            <button className="btn btn-primary" onClick={() => setPaletteOpen(true)}>Commencer la Recherche</button>
             <button className="btn btn-secondary">Explorer les Lois</button>
+          </div>
+          <div className="hero-metrics" aria-label="Indicateurs clés">
+            <div className="metric"><span>+1 200</span> textes consolidés</div>
+            <div className="metric"><span>95%</span> couverture des domaines</div>
+            <div className="metric"><span>≈2s</span> temps de réponse moyen</div>
           </div>
         </div>
         <div className="hero-image">
           <div className="hero-placeholder">
             <div className="book-icon">📚</div>
             <p>Bibliothèque Numérique des Lois</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section className="trustbar" aria-label="Ils nous font confiance">
+        <div className="container trustbar-inner">
+          <span className="trustbar-title">Plébiscité par les cabinets et institutions</span>
+          <div className="logo-row" aria-hidden="true">
+            <div className="logo-pill">BARREAU</div>
+            <div className="logo-pill">COUR DE CASSATION</div>
+            <div className="logo-pill">CABINET PREMIUM</div>
+            <div className="logo-pill">UNIVERSITÉ</div>
+            <div className="logo-pill">MINISTÈRE</div>
           </div>
         </div>
       </section>
@@ -166,6 +213,51 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="testimonials" aria-label="Témoignages">
+        <div className="container">
+          <h2 className="section-title">Ce que disent les professionnels</h2>
+          <div className="testimonials-grid">
+            <figure className="testimonial">
+              <blockquote>
+                « Une référence fiable et rapide. Mes recherches sont 3x plus efficaces. »
+              </blockquote>
+              <figcaption>
+                Me Amal K., Avocate en droit des affaires
+              </figcaption>
+            </figure>
+            <figure className="testimonial">
+              <blockquote>
+                « L’UX est irréprochable. Les textes consolidés m’évitent des erreurs. »
+              </blockquote>
+              <figcaption>
+                Me Hatem B., Juriste senior
+              </figcaption>
+            </figure>
+            <figure className="testimonial">
+              <blockquote>
+                « Adoption facile dans mon cabinet. Les jeunes collaborateurs adorent. »
+              </blockquote>
+              <figcaption>
+                Me Sana R., Managing Partner
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="how-it-works" aria-label="Comment ça marche">
+        <div className="container">
+          <h2 className="section-title">En 3 étapes</h2>
+          <ol className="steps">
+            <li className="step"><span className="step-badge">1</span> Tapez un mot-clé (ex: « sociétés »)</li>
+            <li className="step"><span className="step-badge">2</span> Filtrez par date, nature, domaine</li>
+            <li className="step"><span className="step-badge">3</span> Ouvrez le texte consolidé et citez</li>
+          </ol>
         </div>
       </section>
 
@@ -277,6 +369,56 @@ const LandingPage = () => {
           <div key={i} className="particle" style={p} />
         ))}
       </div>
+
+      {/* CTA Banner */}
+      <div className="cta-banner" role="region" aria-label="Inscription gratuite">
+        <div className="container cta-inner">
+          <div className="cta-text">
+            <h3>Accélérez vos recherches juridiques</h3>
+            <p>Essayez gratuitement. Sans carte. Annulable à tout moment.</p>
+          </div>
+          <div className="cta-actions">
+            <button className="btn btn-primary" onClick={() => setPaletteOpen(true)}>Démarrer maintenant</button>
+            <button className="btn btn-secondary">Voir une démo</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Command Palette */}
+      {paletteOpen && (
+        <div className="palette-overlay" role="dialog" aria-modal="true" aria-labelledby="palette-title">
+          <div className="palette">
+            <div className="palette-header">
+              <div className="palette-title" id="palette-title">Recherche rapide</div>
+              <button className="palette-close" aria-label="Fermer" onClick={() => setPaletteOpen(false)}>✕</button>
+            </div>
+            <div className="palette-search">
+              <input
+                ref={paletteInputRef}
+                value={paletteQuery}
+                onChange={(e) => setPaletteQuery(e.target.value)}
+                placeholder="Ex: Procédure civile, sociétés, marchés publics…"
+                aria-label="Requête"
+              />
+              <div className="palette-hint">Entrée pour rechercher • Échap pour fermer</div>
+            </div>
+            <ul className="palette-list" role="listbox">
+              {(paletteQuery ? suggestions.filter(s => s.toLowerCase().includes(paletteQuery.toLowerCase())) : suggestions).map((s, i) => (
+                <li key={i} className="palette-item" role="option" onClick={() => {
+                  setPaletteQuery(s);
+                  setPaletteOpen(false);
+                  const form = document.querySelector('.hero-search');
+                  if (form) {
+                    const input = form.querySelector('input[name="q"]');
+                    if (input) input.value = s;
+                    form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+                  }
+                }}>{s}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
 
       <button
         type="button"
