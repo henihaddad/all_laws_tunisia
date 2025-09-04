@@ -9,6 +9,8 @@
 > **✅ Connection Fixed**: Now properly connected to https://github.com/henihaddad/all_laws_tunisia
 >
 > **🔄 Testing Deployment**: This commit should trigger automatic deployment from GitHub to Vercel
+>
+> **🆕 New Vercel Project**: Fresh project created at https://alllawstunisia-a7k1ar8q0-henihaddads-projects.vercel.app
 
 ## 📋 وصف المشروع
 
