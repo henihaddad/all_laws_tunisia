@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './LandingPage.css';
+import LawsLibrary from './LawsLibrary';
 
 const LandingPage = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -53,6 +54,7 @@ const LandingPage = () => {
   };
 
   const suggestions = [
+    'Lois de Finances 2020-2025',
     'Code des obligations et des contrats',
     'Droit des sociétés',
     'Procédure civile et commerciale',
@@ -71,6 +73,7 @@ const LandingPage = () => {
             <h2>🇹🇳 Toutes les Lois Tunisiennes</h2>
           </div>
           <div className="nav-links">
+            <a href="#laws">Bibliothèque</a>
             <a href="#features">Fonctionnalités</a>
             <a href="#about">À propos</a>
             <a href="#contact">Contact</a>
@@ -113,7 +116,7 @@ const LandingPage = () => {
           </form>
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => setPaletteOpen(true)}>Commencer la Recherche</button>
-            <button className="btn btn-secondary">Explorer les Lois</button>
+            <button className="btn btn-secondary" onClick={() => document.getElementById('laws')?.scrollIntoView({ behavior: 'smooth' })}>Explorer les Lois</button>
           </div>
           <div className="hero-metrics" aria-label="Indicateurs clés">
             <div className="metric"><span>+1 200</span> textes consolidés</div>
@@ -142,6 +145,9 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Laws Library Section */}
+      <LawsLibrary isDark={isDark} />
 
       {/* Features Section */}
       <section id="features" className="features">
@@ -324,6 +330,7 @@ const LandingPage = () => {
             <div className="footer-section">
               <h4>Liens Rapides</h4>
               <ul>
+                <li><a href="#laws">Bibliothèque Juridique</a></li>
                 <li><a href="#features">Fonctionnalités</a></li>
                 <li><a href="#about">À Propos</a></li>
                 <li><a href="#contact">Contact</a></li>

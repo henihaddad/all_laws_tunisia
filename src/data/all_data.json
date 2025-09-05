@@ -1,0 +1,718 @@
+{
+  "metadata": {
+    "title": "Tunisia Legal Documents Database",
+    "description": "Comprehensive collection of Tunisian legal documents and laws",
+    "last_updated": "2025-09-05",
+    "version": "2.0.0",
+    "total_sections": 6,
+    "total_documents": 36,
+    "sources": [
+      {
+        "name": "Ministry of Finance of Tunisia",
+        "url": "https://www.finances.gov.tn",
+        "type": "official_government",
+        "language": "arabic_french"
+      }
+    ]
+  },
+  "sections": {
+    "constitution": {
+      "id": "constitution",
+      "title": "Constitution",
+      "title_ar": "الدستور",
+      "icon": "📜",
+      "description": "Constitution de la République Tunisienne et textes constitutionnels",
+      "description_ar": "دستور الجمهورية التونسية والنصوص الدستورية",
+      "status": "active",
+      "total_documents": 5,
+      "date_range": "1959-2022",
+      "source_ministry": "Official State Publications",
+      "documents": {
+        "main_laws": [
+          {
+            "id": "constitution_2022",
+            "year": 2022,
+            "title": "Constitution de la République Tunisienne 2022",
+            "title_ar": "دستور الجمهورية التونسية 2022",
+            "status": "active",
+            "publish_date": "2022-07-25",
+            "publish_date_formatted": "25 Juillet 2022",
+            "file_size": "2.8 MB",
+            "url": "https://www.presidence.tn/upload/docs/Constitution_Tunisie_2022.pdf",
+            "is_new": true,
+            "language": "arabic_french",
+            "highlights": [
+              "Constitution actuelle",
+              "Régime présidentiel",
+              "117 articles"
+            ],
+            "highlights_ar": [
+              "الدستور الحالي",
+              "نظام رئاسي",
+              "117 فصلاً"
+            ],
+            "official_reference": "Référendum constitutionnel du 25 juillet 2022",
+            "tags": ["constitution", "2022", "referendum", "presidential"]
+          },
+          {
+            "id": "constitution_2014",
+            "year": 2014,
+            "title": "Constitution de la République Tunisienne 2014",
+            "title_ar": "دستور الجمهورية التونسية 2014",
+            "status": "archived",
+            "publish_date": "2014-01-26",
+            "publish_date_formatted": "26 Janvier 2014",
+            "file_size": "3.2 MB",
+            "url": "https://www.constituteproject.org/constitution/Tunisia_2014.pdf",
+            "is_new": false,
+            "language": "arabic_french",
+            "highlights": [
+              "Régime semi-parlementaire",
+              "Post-révolution",
+              "149 articles"
+            ],
+            "highlights_ar": [
+              "نظام شبه برلماني",
+              "ما بعد الثورة",
+              "149 فصلاً"
+            ],
+            "official_reference": "Adoptée par l'Assemblée Nationale Constituante",
+            "tags": ["constitution", "2014", "democratic", "transition"]
+          },
+          {
+            "id": "constitution_1959",
+            "year": 1959,
+            "title": "Constitution de la République Tunisienne 1959",
+            "title_ar": "دستور الجمهورية التونسية 1959",
+            "status": "archived",
+            "publish_date": "1959-06-01",
+            "publish_date_formatted": "1er Juin 1959",
+            "file_size": "N/A",
+            "url": "https://mjp.univ-perp.fr/constit/tn1959.htm",
+            "is_new": false,
+            "language": "french",
+            "highlights": [
+              "Constitution historique",
+              "Indépendance",
+              "78 articles originaux"
+            ],
+            "highlights_ar": [
+              "دستور تاريخي",
+              "الاستقلال",
+              "78 فصلاً أصلياً"
+            ],
+            "official_reference": "Première constitution post-indépendance",
+            "tags": ["constitution", "1959", "historical", "independence"]
+          }
+        ],
+        "related_documents": [
+          {
+            "id": "constitutional_court_law",
+            "title": "Loi organique relative à la Cour constitutionnelle",
+            "title_ar": "قانون أساسي يتعلق بالمحكمة الدستورية",
+            "type": "organic_law",
+            "year": 2015,
+            "url": "http://www.legislation.tn/fr/content/cour-constitutionnelle",
+            "language": "french_arabic",
+            "description": "Organisation et fonctionnement de la Cour constitutionnelle"
+          },
+          {
+            "id": "constitutional_referendum_2022",
+            "title": "Décret-loi relatif au référendum constitutionnel",
+            "title_ar": "مرسوم قانون يتعلق بالاستفتاء الدستوري",
+            "type": "decree_law",
+            "year": 2022,
+            "url": "http://www.iort.gov.tn/WD120AWP/WD120Awp.exe/CTX_8632-9-qfGxNqWCKH/Principal/SYNC_1146378125",
+            "language": "arabic",
+            "description": "Organisation du référendum constitutionnel de 2022"
+          }
+        ]
+      },
+      "search_keywords": [
+        "constitution", "دستور", "droits fondamentaux", "حقوق أساسية",
+        "régime politique", "نظام سياسي", "séparation des pouvoirs", "فصل السلطات",
+        "cour constitutionnelle", "محكمة دستورية", "référendum", "استفتاء"
+      ],
+      "collection_stats": {
+        "total_main_laws": 3,
+        "total_related_documents": 2,
+        "languages": ["arabic", "french", "bilingual"],
+        "most_recent": "2022-07-25",
+        "oldest": "1959-06-01"
+      }
+    },
+    "finance_laws": {
+      "id": "finance",
+      "title": "Lois de Finances",
+      "title_ar": "قوانين المالية",
+      "icon": "💰",
+      "description": "Collection complète des lois de finances de la République Tunisienne",
+      "description_ar": "مجموعة كاملة من قوانين المالية للجمهورية التونسية",
+      "status": "active",
+      "total_documents": 9,
+      "date_range": "2020-2025",
+      "source_ministry": "Ministry of Finance",
+      "documents": {
+        "main_laws": [
+          {
+            "id": "lf2025",
+            "year": 2025,
+            "title": "Loi de Finances 2025",
+            "title_ar": "قانون المالية لسنة 2025",
+            "status": "active",
+            "publish_date": "2024-12-09",
+            "publish_date_formatted": "Décembre 2024",
+            "file_size": "9.3 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2024-12/LF2025.pdf",
+            "is_new": true,
+            "language": "arabic",
+            "highlights": [
+              "Nouvelles dispositions fiscales",
+              "Réforme budgétaire",
+              "Mesures économiques"
+            ],
+            "highlights_ar": [
+              "أحكام ضريبية جديدة",
+              "إصلاح الميزانية",
+              "تدابير اقتصادية"
+            ],
+            "official_number": "48",
+            "official_reference": "قانون عدد 48 لسنة 2024 مؤرخ في 9 ديسمبر 2024",
+            "tags": ["budget", "taxes", "economy", "2025"]
+          },
+          {
+            "id": "lf2024",
+            "year": 2024,
+            "title": "Loi de Finances 2024",
+            "title_ar": "قانون المالية لسنة 2024",
+            "status": "active",
+            "publish_date": "2023-12-31",
+            "publish_date_formatted": "Décembre 2023",
+            "file_size": "2.76 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2023-12/LF2024_0.pdf",
+            "is_new": false,
+            "language": "arabic",
+            "highlights": [
+              "Réformes fiscales",
+              "Budget de l'État",
+              "Investissements publics"
+            ],
+            "highlights_ar": [
+              "إصلاحات ضريبية",
+              "ميزانية الدولة",
+              "الاستثمارات العمومية"
+            ],
+            "tags": ["budget", "reforms", "investments", "2024"]
+          },
+          {
+            "id": "lf2023",
+            "year": 2023,
+            "title": "Loi de Finances 2023",
+            "title_ar": "قانون المالية لسنة 2023",
+            "status": "active",
+            "publish_date": "2022-12-31",
+            "publish_date_formatted": "Décembre 2022",
+            "file_size": "2.8 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2022-12/LF.pdf",
+            "is_new": false,
+            "language": "arabic",
+            "highlights": [
+              "Mesures sociales",
+              "Politique fiscale",
+              "Dette publique"
+            ],
+            "highlights_ar": [
+              "تدابير اجتماعية",
+              "السياسة الضريبية",
+              "الدين العمومي"
+            ],
+            "tags": ["social", "fiscal_policy", "debt", "2023"]
+          },
+          {
+            "id": "lf2022",
+            "year": 2022,
+            "title": "Loi de Finances 2022",
+            "title_ar": "قانون المالية لسنة 2022",
+            "status": "active",
+            "publish_date": "2022-02-28",
+            "publish_date_formatted": "Février 2022",
+            "file_size": "3.1 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2022-02/Loi_des_Finances%202022_0.pdf",
+            "is_new": false,
+            "language": "arabic",
+            "highlights": [
+              "Réformes structurelles",
+              "Équilibre budgétaire",
+              "Développement régional"
+            ],
+            "highlights_ar": [
+              "إصلاحات هيكلية",
+              "التوازن الميزاني",
+              "التنمية الجهوية"
+            ],
+            "tags": ["structural_reforms", "budget_balance", "regional_development", "2022"]
+          },
+          {
+            "id": "lf2021",
+            "year": 2021,
+            "title": "Loi de Finances 2021",
+            "title_ar": "قانون المالية لسنة 2021",
+            "status": "active",
+            "publish_date": "2021-02-28",
+            "publish_date_formatted": "Février 2021",
+            "file_size": "2.5 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2021-02/1%20%282%29.pdf",
+            "is_new": false,
+            "language": "arabic",
+            "highlights": [
+              "Plan de relance",
+              "Mesures COVID-19",
+              "Soutien aux entreprises"
+            ],
+            "highlights_ar": [
+              "خطة الانتعاش",
+              "تدابير كوفيد-19",
+              "دعم المؤسسات"
+            ],
+            "tags": ["recovery_plan", "covid19", "business_support", "2021"]
+          },
+          {
+            "id": "lf2020",
+            "year": 2020,
+            "title": "Loi de Finances 2020",
+            "title_ar": "قانون المالية لسنة 2020",
+            "status": "active",
+            "publish_date": "2020-02-28",
+            "publish_date_formatted": "Février 2020",
+            "file_size": "2.2 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2020-02/Loi_finances_2020_fr.pdf",
+            "is_new": false,
+            "language": "french",
+            "highlights": [
+              "Budget initial",
+              "Réformes économiques",
+              "Politique monétaire"
+            ],
+            "highlights_ar": [
+              "الميزانية الأولية",
+              "إصلاحات اقتصادية",
+              "السياسة النقدية"
+            ],
+            "tags": ["initial_budget", "economic_reforms", "monetary_policy", "2020"]
+          }
+        ],
+        "supplementary_laws": [
+          {
+            "id": "lfc2021",
+            "year": 2021,
+            "title": "Loi de Finances Complémentaire 2021",
+            "title_ar": "قانون المالية التكميلي لسنة 2021",
+            "type": "supplementary",
+            "status": "active",
+            "publish_date": "2021-11-30",
+            "publish_date_formatted": "Novembre 2021",
+            "file_size": "1.8 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2021-11/Décret-loi2021_3_0.pdf",
+            "language": "arabic",
+            "description": "Modifications et ajustements budgétaires en cours d'exercice",
+            "tags": ["supplementary", "budget_adjustment", "2021"]
+          },
+          {
+            "id": "lfc2020",
+            "year": 2020,
+            "title": "Loi de Finances Complémentaire 2020",
+            "title_ar": "قانون المالية التكميلي لسنة 2020",
+            "type": "supplementary",
+            "status": "active",
+            "publish_date": "2021-02-28",
+            "publish_date_formatted": "Février 2021",
+            "file_size": "1.5 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2021-02/Loi2020_45Arrabe.pdf",
+            "language": "arabic",
+            "description": "Ajustements budgétaires suite à la pandémie COVID-19",
+            "tags": ["supplementary", "covid19_adjustments", "2020"]
+          },
+          {
+            "id": "lfc2019",
+            "year": 2019,
+            "title": "Loi de Finances Complémentaire 2019",
+            "title_ar": "قانون المالية التكميلي لسنة 2019",
+            "type": "supplementary",
+            "status": "active",
+            "publish_date": "2020-02-28",
+            "publish_date_formatted": "Février 2020",
+            "file_size": "1.9 MB",
+            "url": "https://www.finances.gov.tn/sites/default/files/2020-02/Loi_finances_comp_2020_fr.pdf",
+            "language": "french",
+            "description": "Dispositions financières complémentaires pour l'exercice 2019",
+            "tags": ["supplementary", "financial_provisions", "2019"]
+          }
+        ],
+        "related_reports": [
+          {
+            "id": "rapport_budget_2024",
+            "title": "Rapport sur le budget de l'État pour l'année 2024",
+            "title_ar": "تقرير حول مشروع ميزانية الدولة لسنة 2024",
+            "type": "budget_report",
+            "year": 2024,
+            "url": "https://www.finances.gov.tn/sites/default/files/2023-10/rapport_budget_2024_0.pdf",
+            "language": "arabic",
+            "description": "Rapport détaillé accompagnant le projet de loi de finances 2024"
+          },
+          {
+            "id": "projet_lf_2024",
+            "title": "Projet de loi de finances pour l'année 2024",
+            "title_ar": "مشروع قانون المالية لسنة 2024",
+            "type": "draft_law",
+            "year": 2024,
+            "url": "https://www.finances.gov.tn/sites/default/files/2023-10/projet_LF_2024.pdf",
+            "language": "arabic",
+            "description": "Version projet avant adoption définitive"
+          }
+        ]
+      },
+      "search_keywords": [
+        "finances", "budget", "fiscal", "taxes", "impôts", "ميزانية", "ضرائب", "مالية",
+        "dette publique", "الدين العمومي", "investissements", "استثمارات"
+      ],
+      "collection_stats": {
+        "total_main_laws": 6,
+        "total_supplementary": 3,
+        "total_reports": 2,
+        "languages": ["arabic", "french"],
+        "size_range": "1.5 MB - 9.3 MB",
+        "most_recent": "2025-01-01",
+        "oldest": "2020-01-01"
+      }
+    },
+    "commercial_code": {
+      "id": "commercial",
+      "title": "Code de Commerce",
+      "title_ar": "مجلة التجارة",
+      "icon": "🏪",
+      "description": "Code de commerce tunisien et lois commerciales",
+      "description_ar": "مجلة التجارة التونسية والقوانين التجارية",
+      "status": "active",
+      "total_documents": 10,
+      "date_range": "2015-2025",
+      "source_ministry": "Ministry of Finance & Financial Market Council",
+      "documents": {
+        "main_laws": [
+          {
+            "id": "cmf_bulletin_sep2025_1",
+            "year": 2025,
+            "title": "Bulletin Officiel du Conseil du Marché Financier - Septembre 2025",
+            "title_ar": "النشرة الرسمية لمجلس السوق المالي - سبتمبر 2025",
+            "status": "active",
+            "publish_date": "2025-09-01",
+            "publish_date_formatted": "Septembre 2025",
+            "file_size": "2.1 MB",
+            "url": "https://www.cmf.tn/sites/default/files/pdfs/publications/bulletin-officiel/bo250901.pdf",
+            "is_new": true,
+            "language": "french",
+            "highlights": ["Réglementation bancaire", "Marchés financiers", "Conformité"],
+            "highlights_ar": ["التنظيم المصرفي", "الأسواق المالية", "الامتثال"],
+            "tags": ["financial_markets", "banking", "regulation", "2025"],
+            "type": "main"
+          },
+          {
+            "id": "tunis_re_rapport_2024",
+            "year": 2024,
+            "title": "Tunis Re - Rapport Annuel 2024",
+            "title_ar": "تونس إعادة التأمين - التقرير السنوي 2024",
+            "status": "active",
+            "publish_date": "2024-12-31",
+            "publish_date_formatted": "Décembre 2024",
+            "file_size": "8.5 MB",
+            "url": "https://www.tunisre.com.tn/wp-content/uploads/2025/08/Tunis-Re-Rapport-Annuel-2024.pdf",
+            "is_new": false,
+            "language": "french",
+            "highlights": ["Assurance", "Réassurance", "Résultats financiers"],
+            "highlights_ar": ["التأمين", "إعادة التأمين", "النتائج المالية"],
+            "tags": ["insurance", "reinsurance", "annual_report", "2024"],
+            "type": "main"
+          },
+          {
+            "id": "atl_note_operation_2024",
+            "year": 2024,
+            "title": "Arab Tunisian Lease - Note d'opération 2024",
+            "title_ar": "العربية التونسية للإيجار - مذكرة العملية 2024",
+            "status": "active",
+            "publish_date": "2024-06-30",
+            "publish_date_formatted": "Juin 2024",
+            "file_size": "1.8 MB",
+            "url": "https://www.cmf.tn/sites/default/files/pdfs/emetteurs/informations/prospectus/note_operation_eo_atl_2024_2.pdf",
+            "is_new": false,
+            "language": "french",
+            "highlights": ["Crédit-bail", "Financement", "Opérations bancaires"],
+            "highlights_ar": ["التأجير التمويلي", "التمويل", "العمليات المصرفية"],
+            "tags": ["leasing", "financing", "banking_operations", "2024"],
+            "type": "main"
+          },
+          {
+            "id": "biat_etats_financiers_2025",
+            "year": 2025,
+            "title": "BIAT - États Financiers au 30 juin 2025",
+            "title_ar": "البنك الدولي العربي لتونس - البيانات المالية 30 يونيو 2025",
+            "status": "active",
+            "publish_date": "2025-09-02",
+            "publish_date_formatted": "Septembre 2025",
+            "file_size": "1.2 MB",
+            "url": "https://www.biat.com.tn/sites/default/files/2025-09/20250902-BIAT-etats-financiers-au-30-06-2025.pdf",
+            "is_new": true,
+            "language": "french",
+            "highlights": ["États financiers", "Banque", "Résultats semestriels"],
+            "highlights_ar": ["البيانات المالية", "البنك", "النتائج النصف سنوية"],
+            "tags": ["financial_statements", "banking", "semi_annual", "2025"],
+            "type": "main"
+          }
+        ],
+        "related_reports": [
+          {
+            "id": "commercial_registration_study_2017",
+            "title": "L'immatriculation au registre du commerce : étude des droits tunisien et français",
+            "title_ar": "التسجيل في السجل التجاري: دراسة القانون التونسي والفرنسي",
+            "type": "academic_study",
+            "year": 2017,
+            "url": "https://theses.hal.science/tel-01710766/document",
+            "language": "french",
+            "description": "Étude comparative du droit commercial tunisien et français concernant l'immatriculation au registre du commerce",
+            "tags": ["commercial_registration", "comparative_law", "academic"]
+          }
+        ],
+        "bulletins_officiels": [
+          {
+            "id": "cmf_bulletin_aug2025",
+            "title": "Bulletin Officiel CMF - Août 2025",
+            "url": "https://www.cmf.tn/sites/default/files/pdfs/publications/bulletin-officiel/bo250819.pdf",
+            "year": 2025,
+            "type": "official_bulletin"
+          },
+          {
+            "id": "cmf_bulletin_sep2025_2",
+            "title": "Bulletin Officiel CMF - Septembre 2025 Vol 2",
+            "url": "https://www.cmf.tn/sites/default/files/pdfs/publications/bulletin-officiel/bo250902.pdf",
+            "year": 2025,
+            "type": "official_bulletin"
+          },
+          {
+            "id": "cmf_bulletin_sep2025_3",
+            "title": "Bulletin Officiel CMF - Septembre 2025 Vol 3",
+            "url": "https://www.cmf.tn/sites/default/files/pdfs/publications/bulletin-officiel/bo250903.pdf",
+            "year": 2025,
+            "type": "official_bulletin"
+          }
+        ]
+      },
+      "search_keywords": [
+        "commerce", "société", "banque", "assurance", "crédit", "marché financier",
+        "تجارة", "شركة", "بنك", "تأمين", "ائتمان", "سوق مالي"
+      ],
+      "collection_stats": {
+        "total_main_laws": 4,
+        "total_bulletins": 3,
+        "total_reports": 1,
+        "languages": ["french", "arabic"],
+        "size_range": "1.2 MB - 8.5 MB",
+        "most_recent": "2025-09-02",
+        "oldest": "2017-01-01"
+      }
+    },
+    "civil_code": {
+      "id": "civil",
+      "title": "Code Civil",
+      "title_ar": "المجلة المدنية",
+      "icon": "⚖️",
+      "description": "Code civil tunisien et législation civile",
+      "description_ar": "المجلة المدنية التونسية والتشريع المدني",
+      "status": "coming_soon",
+      "total_documents": 0,
+      "documents": {
+        "main_laws": [],
+        "family_law": [],
+        "property_law": [],
+        "obligations_contracts": []
+      },
+      "planned_content": [
+        "Code civil principal",
+        "Code de statut personnel",
+        "Droit des obligations et des contrats",
+        "Droit immobilier",
+        "Droit de la famille"
+      ]
+    },
+    "labor_code": {
+      "id": "labor",
+      "title": "Code du Travail",
+      "title_ar": "مجلة الشغل",
+      "icon": "👷",
+      "description": "Code du travail tunisien et sécurité sociale",
+      "description_ar": "مجلة الشغل التونسية والضمان الاجتماعي",
+      "status": "active",
+      "total_documents": 10,
+      "date_range": "2008-2025",
+      "source_ministry": "Ministry of Employment & International Organizations",
+      "documents": {
+        "main_laws": [
+          {
+            "id": "tunisia_labor_profile_2016",
+            "year": 2016,
+            "title": "Tunisia Labour Market Profile 2016",
+            "title_ar": "ملف سوق العمل التونسي 2016",
+            "status": "active",
+            "publish_date": "2016-12-31",
+            "publish_date_formatted": "2016",
+            "file_size": "2.3 MB",
+            "url": "https://www.ulandssekretariatet.dk/wp-content/uploads/2020/03/Tunesien_lmp_2016.pdf",
+            "language": "english",
+            "highlights": ["Marché du travail", "Emploi", "Statistiques"],
+            "highlights_ar": ["سوق العمل", "التوظيف", "الإحصائيات"],
+            "tags": ["labor_market", "employment", "statistics", "2016"],
+            "type": "main"
+          },
+          {
+            "id": "tunisia_human_rights_2024",
+            "year": 2024,
+            "title": "Tunisia Human Rights Report 2024 (Labor Law Sections)",
+            "title_ar": "تقرير حقوق الإنسان تونس 2024 (أقسام قانون العمل)",
+            "status": "active",
+            "publish_date": "2024-12-31",
+            "publish_date_formatted": "2024",
+            "file_size": "1.8 MB",
+            "url": "https://www.state.gov/wp-content/uploads/2025/08/624521_TUNISIA-2024-HUMAN-RIGHTS-REPORT.pdf",
+            "language": "english",
+            "highlights": ["Droits des travailleurs", "Conditions de travail", "Syndicats"],
+            "highlights_ar": ["حقوق العمال", "ظروف العمل", "النقابات"],
+            "tags": ["workers_rights", "labor_conditions", "unions", "2024"],
+            "type": "main"
+          }
+        ],
+        "international_reports": [
+          {
+            "id": "ilo_decent_work_2008",
+            "title": "ILO Decent Work Country Programme Guidebook",
+            "url": "https://www.cosv.org/download/centrodocumentazione/ilo+decent+work.pdf",
+            "year": 2008,
+            "type": "international_report"
+          },
+          {
+            "id": "comparative_arab_labor_law",
+            "title": "Comparative Study of Labour Law in Arab Partner Countries",
+            "url": "https://library.fes.de/pdf-files/gurn/00303.pdf",
+            "year": 2020,
+            "type": "comparative_study"
+          }
+        ]
+      },
+      "search_keywords": [
+        "travail", "emploi", "syndicat", "salaire", "congé", "sécurité sociale",
+        "شغل", "عمل", "نقابة", "أجر", "عطلة", "ضمان اجتماعي"
+      ]
+    },
+    "penal_code": {
+      "id": "penal",
+      "title": "Code Pénal",
+      "title_ar": "المجلة الجزائية",
+      "icon": "🔨",
+      "description": "Code pénal tunisien et procédures pénales",
+      "description_ar": "المجلة الجزائية التونسية والإجراءات الجزائية",
+      "status": "limited",
+      "total_documents": 1,
+      "documents": {
+        "main_laws": [],
+        "criminal_procedure": [],
+        "special_laws": [
+          {
+            "id": "icj_counter_terrorism_2015",
+            "title": "ICJ E-Bulletin on Counter-Terrorism & Human Rights",
+            "title_ar": "نشرة لجنة الحقوقيين الدولية حول مكافحة الإرهاب وحقوق الإنسان",
+            "url": "https://www.icj.org/wp-content/uploads/2015/09/Ebulletin-Aug15-Final.pdf",
+            "year": 2015,
+            "type": "international_analysis"
+          }
+        ]
+      },
+      "planned_content": [
+        "Code pénal principal",
+        "Code de procédure pénale",
+        "Lois spéciales pénales",
+        "Réglementation pénitentiaire",
+        "Lutte contre le terrorisme"
+      ]
+    }
+  },
+  "search_config": {
+    "global_keywords": [
+      "tunisie", "tunisia", "تونس", "loi", "قانون", "code", "مجلة", 
+      "décret", "مرسوم", "arrêté", "قرار", "circulaire", "منشور"
+    ],
+    "date_formats": ["YYYY-MM-DD", "DD/MM/YYYY", "YYYY"],
+    "supported_languages": ["french", "arabic", "bilingual"],
+    "file_types": ["pdf", "doc", "docx"],
+    "sort_options": [
+      {"value": "year-desc", "label": "Plus récent", "label_ar": "الأحدث"},
+      {"value": "year-asc", "label": "Plus ancien", "label_ar": "الأقدم"},
+      {"value": "size", "label": "Taille du fichier", "label_ar": "حجم الملف"},
+      {"value": "relevance", "label": "Pertinence", "label_ar": "الصلة"}
+    ]
+  },
+  "ui_config": {
+    "themes": {
+      "light": {
+        "primary": "#e62929",
+        "secondary": "#0d47a1",
+        "background": "#ffffff",
+        "text": "#333333"
+      },
+      "dark": {
+        "primary": "#ff4444",
+        "secondary": "#2196f3",
+        "background": "#1a1a1a",
+        "text": "#ffffff"
+      }
+    },
+    "animations": {
+      "card_hover": "translateY(-5px) scale(1.02)",
+      "transition_duration": "0.3s",
+      "easing": "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
+    },
+    "responsive_breakpoints": {
+      "mobile": "768px",
+      "tablet": "1024px",
+      "desktop": "1200px"
+    }
+  },
+  "api_config": {
+    "base_urls": {
+      "tunisia_finance": "https://www.finances.gov.tn",
+      "official_journal": "https://www.iort.gov.tn",
+      "legislation": "https://legislation.tn"
+    },
+    "update_schedule": {
+      "finance_laws": "monthly",
+      "other_codes": "quarterly",
+      "emergency_updates": "as_needed"
+    },
+    "cache_duration": {
+      "documents": "24h",
+      "metadata": "1h",
+      "search_results": "30min"
+    }
+  },
+  "legal_disclaimer": {
+    "fr": "Ce site fournit un accès aux textes légaux à des fins d'information uniquement. Pour toute utilisation officielle, veuillez consulter les sources gouvernementales officielles.",
+    "ar": "يوفر هذا الموقع الوصول إلى النصوص القانونية لأغراض إعلامية فقط. للاستخدام الرسمي، يرجى الرجوع إلى المصادر الحكومية الرسمية.",
+    "official_sources": [
+      "Journal Officiel de la République Tunisienne (JORT)",
+      "Ministère des Finances",
+      "Assemblée des Représentants du Peuple"
+    ]
+  },
+  "contact_info": {
+    "maintainer": "Tunisia Laws Platform Team",
+    "email": "info@laws-tunisia.tn",
+    "github": "https://github.com/your-repo/all-laws-tunisia",
+    "feedback_form": "/contact",
+    "last_data_update": "2025-09-05T08:00:00Z"
+  }
+}
